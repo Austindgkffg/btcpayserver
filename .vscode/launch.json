@@ -4,7 +4,32 @@
     // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
     "version": "0.2.0",
     "configurations": [
+        
         {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "C#: <project-name> Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/<relative-path-to-project-folder><project-name>.csproj"
+        },
+    {
+        "name": "C#: <project-name> Debug",
+        "type": "dotnet",
+        "request": "launch",
+        "projectPath": "${workspaceFolder}/<relative-path-to-project-folder><project-name>.csproj"
+    },
+        {
+   <!-- IMPORTANT: Please be sure to remove any private information before submitting. -->
+   
+   Please attach the log file located at /home/codespace/.vscode-remote/data/logs/20250223T193504/exthost7/ms-dotnettools.vscode-dotnet-runtime/DotNetAcquisition-ms-dotnettools.vscode-dotnet-runtime-1740340202259.txt. Note that this file may contain personal data.
+   
+   **Extension Version:** 1.0.0
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
